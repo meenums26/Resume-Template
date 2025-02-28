@@ -7,16 +7,33 @@ body {
     max-width: 800px;
     font-size: 14px;;
 }
-.header {
+.header{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+
+}
+.imgSection {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+.imgSection img{
+    width:120px;
+    height: 160px;
+}
+.titleSection {
+    width:200px;
     text-align: left;
     /* border-bottom: 1.5px solid #333; */
-    padding-bottom: 15px;
-    margin-bottom: 10px;
     /* border-bottom: 0.1px dashed #ddd; */
 }
 .subHeader{
     font-size: 14px;
     display: flex;
+    flex-wrap: wrap;
     justify-content: left;
 }
 .subHeader span{
@@ -30,12 +47,11 @@ h2 {
     border-bottom: 0.1px solid #ddd;
     padding-bottom: 0px;
 }
-.section {
-    margin-bottom: 10px;
+
+.experience-item1,.experience-item2{
+    margin-bottom: 50px;
 }
-.experience-item1,.experience-item2,.experience-item3 {
-    margin-bottom: 10px;
-}
+
 .experience-item1,.experience-item2{
     border-bottom: 0.1px dashed #ddd;
 }
